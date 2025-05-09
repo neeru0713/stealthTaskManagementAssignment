@@ -10,10 +10,10 @@ import Login from "./components/Login";
 import Task from "./components/Task";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import "./app.css";
+import "./App.css";
 
 function App() {
-  
+
   return (
     <Router>
       <div>
