@@ -9,10 +9,7 @@ const Task = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-   const token = JSON.parse(localStorage.getItem("token"));
-  
-
- 
+    const token = JSON.parse(localStorage.getItem("token"));
 
     const taskData = {
       title,
@@ -27,7 +24,7 @@ const Task = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`, 
+          Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify(taskData),
       });
